@@ -1,0 +1,61 @@
+#Ejercicio2
+
+##Cuando en el primer lanzamiento obtiene un 1 o 6 la cuarentena es total,
+##si es un 3, vuelve a lanzar, 
+##y si el número que obtiene en el segundo lanzamiento es 4 o 5 
+##se decreta cuarentena media, en caso contrario se vuelve a lanzar, 
+##y si en el tercer lanzamiento obtiene un 1 o 6 es cuarentena total,
+##si sale 2 o 3 cuarentena media, en otro caso nula.
+##Por último, si en el primer lanzamiento se obtiene un 2 o 4, se declara cuarentena nula 
+##y en otro caso sería media. 
+
+
+Lanzamiento1 <- print(sample(1:6,1, replace = TRUE))
+
+LanzarDados <- if (Lanzamiento1 == 1 || Lanzamiento1 == 6){
+  Cuarentena <- print(paste("CUARENTENA TOTAL"))
+} else if (Lanzamiento1 == 3)
+  Lanzamiento2 <- print(sample(1:6,1, replace = TRUE))
+if (Lanzamiento2 == 4 || Lanzamiento2 == 5){
+  Cuarentena <- print(paste("CUARENTENA MEDIA"))
+} else {
+  Lanzamiento3 <- print(sample(1:6,1, replace = TRUE))
+} if (Lanzamiento3 == 1 || Lanzamiento3 == 6){
+  Cuarentena <- print(paste("CUARENTENA TOTAL"))
+} else if ( Lanzamiento3 == 2 || Lanzamiento3 == 3) {
+  Cuarentena <- print(paste("CUARENTENA MEDIA"))
+} else {
+  Cuarentena <- print(paste("CUARENTENA NULA"))
+} else if (Lanzamiento1 == 2 || Lanzamiento1 == 4 ){
+  Cuarentena <- print(paste("CUARENTENA NULA"))
+} else {
+  Cuarentena <- print(paste("CUARENTENA MEDIA"))
+}
+
+#############################
+
+LanzounDado<- c(print(sample(1:6,1)))
+
+if (LanzounDado==1 || LanzounDado== 6){
+  SeDeclaraCuarentena <- print(paste("TOTAL"))
+} else if ( LanzounDado == 2 || LanzounDado == 4 ) {
+  SeDeclaraCuarentena <- print(paste("NULA"))
+} else if (LanzounDado == 5) {
+  SeDeclaraCuarentena <- print(paste("MEDIA"))
+} else if (LanzounDado == 3) {
+  LazarSegundaVez <- c(print(sample(1:6,1)))
+  if (LanzarSegundaVez == 4 || LanzarSegundaVez == 5) {
+    SeDeclaraCuarentena <- print(paste("MEDIA"))
+  } else {
+    LanzarTerceraVez <- c(print(sample(1:6,1)))
+    if (LanzarTerceraVez == 1 || LanzarTerceraVez == 6) {
+      SeDeclaraCuarentena <- print(paste("TOTAL"))
+    } else if (LanzarTerceraVez == 2 || LanzarTerceraVez == 3) {
+      SeDeclaraCuarentena <- print(paste("MEDIA"))
+    } else {
+      SeDeclaraCuarentena <- print(paste("NULA"))
+    }
+  }
+}
+
+
