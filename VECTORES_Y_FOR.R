@@ -164,3 +164,171 @@ for (y in length(VectorCombinado)-1) {
 
 
 length(VectorCombinado)
+
+
+###########################
+##FOR AND FOR-LOOP
+
+for (i in 1:10) {
+  print(i)
+}
+
+for (i in 1:10) {
+  print(paste(i,"Bravo"))
+}
+
+DiasSemana <- c("lunes","martes","miercoles", "jueves", "viernes")
+print(DiasSemana[2])
+
+for (x in 1:5) {
+  print(paste("El dia de la semana es", DiasSemana[4]))
+}
+
+for (x in 1:5) {
+  print(paste("El dia de la semana es", DiasSemana[x]))
+}
+
+print(length(DiasSemana))
+
+##Si no se sabe cuantos elementos hay en nuestro vector usamos length
+
+for (x in 1:length(DiasSemana)) {
+  print(paste("El dia de la semana es", DiasSemana[x]))
+}
+
+
+
+
+#ejemplo
+
+Prueba <- c(451:785)
+
+print(Prueba)
+
+print(length(Prueba))
+
+print(Prueba[250])
+print(Prueba[length(Prueba)])
+
+for (valor in 1:length(Prueba)) {
+  print(valor)
+}
+
+#################
+
+DiasSemana <- c("lunes","martes","miercoles", "jueves", "viernes","sabado", "domingo")
+
+print(DiasSemana)
+
+length(DiasSemana)
+
+DiasSemana <- c("lunes","martes","miercoles", "jueves", "viernes")
+FinSemana <- c("sabado", "domingo")
+
+for (x in 1:length(DiasSemana)) {
+  print(paste(x))
+}
+
+
+
+#########################################
+
+
+diasDeLaSemana <- c("lunes", "martes", "miercoles", "jueves", "viernes")
+finDeSemana <- c("sabado", "domingo")
+
+
+diasDeLaSemana <- c(diasDeLaSemana,finDeSemana,"mayo")
+
+
+print(length(diasDeLaSemana))
+
+
+for(x in 1:length(diasDeLaSemana)){
+  if (diasDeLaSemana[x] == "sabado" || diasDeLaSemana[x] == "domingo"){
+    print(paste("el dia de fin de semana es", diasDeLaSemana[x]))
+  } else if (diasDeLaSemana[x]=="lunes"||diasDeLaSemana[x]=="martes"||
+             diasDeLaSemana[x]=="miercoles"||diasDeLaSemana[x]=="jueves"||
+             diasDeLaSemana[x]=="viernes"){
+    print(paste("el dia de la semana es", diasDeLaSemana[x]))
+  } else {
+    print(paste(diasDeLaSemana[x],"esto no es un día de la semana"))
+  }
+}
+
+##VECTOR VACIO
+##Almacena todos los resultados que se vayan generando dentro del FOR
+
+VectorRespuesta <- c()
+
+##############
+##Tarea, sacar una estadística, que diga que hay 5 dias entre semana y dos de fin 
+
+
+####################
+##EJERCICIOS DE REPASO FOR-LOOP
+
+##1. Calcular el promedio de notas de los alumnos con For 
+
+NotasAlumnos <- c(7.7,6.2,5,3.4,5.6,7.1,4.8,8,2.5,2.7,4.5,3.2)
+
+for (x in NotasAlumnos) {
+  print(paste(x))
+}
+
+print(paste(length(NotasAlumnos)))
+
+TotalNotas <- 0
+
+for (NotaAlumno in NotasAlumnos) {
+  TotalNotas <- TotalNotas+NotaAlumno 
+}
+
+Promediofinal <- TotalNotas/length(NotasAlumnos)
+print(paste("El promedio final de las notas es: ", Promediofinal))
+
+
+##2. Contando azules y rojos, hacer 2 vectores que permitan separar
+##las notas rojas y azules y que las notas se cuenten
+
+NotasAzules <- 0
+NotasRojas <- 0
+
+for (NotaAlumno in NotasAlumnos) {
+  TotalNotas <- TotalNotas+NotaAlumno 
+} if (NotasAlumnos(NotaAlumno) < 4)
+  print(paste("Notas Rojas", NotasAlumnos)){
+    else if {
+      NotasAlumnos(NotaAlumno) >= 4
+      print(paste("Notas Azules", NotasAlumnos))
+    }
+  }
+
+###RESPUESTA
+
+TotalNotas <- 0
+NotasAzules <- 0
+NotasRojas <- 0
+
+for (NotaAlumno in NotasAlumnos) {
+  TotalNotas
+}
+TotalNotas <-
+
+
+  
+  
+##3. Ordenar las notas de mayor a menor 
+  
+print(paste(NotasAlumnos))
+
+NotasAlumnos[3]>NotasAlumnos[4]
+
+for (CantidadDeVecesARecorrer in 1:length(NotasAlumnos)) {
+  for (PosicionNota in 1:length(NotasAlumnos)-1) {
+    if (NotasAlumnos[PosicionconNota]<NotasAlumnos[PosicionNota+1]) {
+      
+    }
+  }
+}
+
